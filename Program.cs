@@ -14,7 +14,6 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigins", p => p
         .WithOrigins(
             "http://localhost:3000",    // React dev server
-            "https://taoone.vn"         // domain production
         )
         .AllowAnyMethod()
         .AllowAnyHeader()
